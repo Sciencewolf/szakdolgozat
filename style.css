@@ -1,0 +1,61 @@
+body {
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+* {
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+}
+
+a {
+    color: white;
+    padding: 2px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+nav {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+aside {
+    top: 5em;
+    left: 5em;
+    border-right: 1px solid white;
+}
+
+#aside-links {
+    top: 5em;
+    right: 5em;
+    border-left: 1px solid white;
+    width: auto;
+}
+
+#aside-links a {
+    text-decoration: none;
+}
+
+#aside-links a:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
