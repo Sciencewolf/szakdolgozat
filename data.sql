@@ -18,3 +18,9 @@ insert into getdata (temp, hum, timewhen) values ('30.2', '69', '2024-04-19 22:5
 
 insert into uploaddata (timewhen, temp, hum) values ('2024-04-19 20:14', '30.1', '65');
 insert into uploaddata (timewhen, temp, hum) values ('2024-04-19 21:41', '30.5', '67');
+
+
+--last 2 element for home page
+select *
+from images 
+order by id desc limit 2;
