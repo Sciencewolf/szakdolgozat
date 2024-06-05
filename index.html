@@ -8,21 +8,21 @@
     <script src="main.js" defer></script>
     <link rel="icon" href="https://img.icons8.com/ios/50/document--v1.png" />
     <link rel="stylesheet" href="style.css" />
-    <title>Documentation</title>
-
+    <title>szakdolgozat docs</title>
 </head>
 <body class="d-flex justify-content-center align-items-center flex-column gap-3 bg-black">
     <aside class="position-fixed p-1" id="aside-route">
-        <nav id="navs">
+        <nav id="navs" class="d-flex justify-content-start align-items-end p-1">
             <a href="#munka" >Munka</a>
             <a href="#muszerek" >Muszerek</a>
             <a href="#fontos" >Fontos tudnivalok</a>
             <a href="#kepek" >Kepek</a>
+            <a href="#tech">Tech</a>
         </nav>
     </aside>
 
-    <div class="position-fixed p-1 d-flex justify-content-center align-items-center flex-column gap-3" id="aside-links">
-        <nav id="links">
+    <div class="position-fixed p-1" id="aside-links">
+        <nav id="links" class="d-flex justify-content-start align-items-start p-1">
             <a href="https://tyukportal.com/csirke-keltetese-keltetogeppel/" >csirke-keltetese-keltetogeppel</a>
             <a href="https://heatcontroll.hu/blog/tojas-keltetes-otthon" >tojas-keltetes-otthon</a>
             <a href="https://www.royalfarm.hu/a-keltetogep-hasznalata-lepesrol-lepesre-48" >keltetogep-hasznalata-lepesrol-lepesre</a>
@@ -34,9 +34,9 @@
 
     <ul>
         <li>Raspberry Pi 4/5
-            <ol>Python</ol>
+            <ol>Python script's</ol>
             <ol>Webserver?</ol>
-            <ol>Upload data into database</ol>
+            <ol>adat feltoltese a db-be</ol>
         </li>
         <li>Android App
             <ol>Kotlin + Jetpack Compose</ol>
@@ -45,10 +45,11 @@
             <ol>Make some action with rpi(take pic ...)</ol>
         </li>
         <li>Database/Storage
-            <ol>Amazon S3?</ol>
-            <ol>Supabase?</ol>
-            <ol>Free</ol>
-            <ol>Maybe NoSQL</ol>
+            <ol>Supabase</ol>
+        </li>
+        <li>Communication
+            <ol>MQTT?</ol>
+            <ol>API(flask/aspnet/expressJS)(http)?</ol>
         </li>
     </ul>
 
@@ -60,7 +61,7 @@
         <li>Homerseklet mero</li>
         <li>Paratartalo mero</li>
         <li>Kamera</li>
-        <li>szellozo(nyillas)</li>
+        <li>szellozo(cooler)</li>
         <li>vilagitas</li>
         <li>tojasforgatas?</li>
     </ul>
@@ -78,6 +79,15 @@
         <img src="images/csirke-keltetes-tablazat.png" alt="csirke-keltetes-tablazat" />
         <img src="images/tojasforgatas.png" alt="tojasforgatas" />
     </div>
+
+    <h3 id="tech">Tech</h3>
+    <footer id="footer" class="d-flex flex-column gap-1">
+        <a class="btn btn-primary" href="https://newbiely.com/tutorials/raspberry-pi/raspberry-pi-heating-system" target="_blank">raspberry-pi-heating-system</a>
+        <a class="btn btn-primary" href="https://www.pitunnel.com/">Pi tunnel</a>
+        <a class="btn btn-primary" href="https://towardsdev.com/android-kotlin-jetpack-compose-handle-push-notifications-pass-data-navigate-to-a-specific-838e11c9ca9c">Push notification in App</a>
+        <a class="btn btn-primary" href="https://www.quora.com/How-can-one-communicate-with-Raspberry-Pi-with-a-mobile-app-from-a-long-distance">communication</a>
+        <a class="btn btn-primary" href="https://medium.com/@bannuranurag/controlling-raspberry-pi-using-an-android-application-c7334625e513">control rpi with app</a>
+    </footer>
     
 </body>
 </html>
