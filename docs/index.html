@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+    <link rel="icon" href="https://img.icons8.com/ios/50/document--v1.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>szakdolgozat docs</title>
+</head>
+<body class="d-flex justify-content-center align-items-center flex-column gap-3 bg-black">
+    <aside class="position-fixed p-1" id="aside-route">
+        <nav id="navs" class="d-flex justify-content-start align-items-end p-1">
+            <a href="#munka" >Munka</a>
+            <a href="#muszerek" >Muszerek</a>
+            <a href="#fontos" >Fontos tudnivalok</a>
+            <a href="#hardware">Hardware</a>
+            <a href="#kepek" >Kepek</a>
+            <a href="#tech">Tech</a>
+        </nav>
+    </aside>
+
+    <div class="position-fixed p-1" id="aside-links">
+        <nav id="links" class="d-flex justify-content-start align-items-start p-1">
+            <a href="https://tyukportal.com/csirke-keltetese-keltetogeppel/" >csirke-keltetese-keltetogeppel</a>
+            <a href="https://heatcontroll.hu/blog/tojas-keltetes-otthon" >tojas-keltetes-otthon</a>
+            <a href="https://www.royalfarm.hu/a-keltetogep-hasznalata-lepesrol-lepesre-48" >keltetogep-hasznalata-lepesrol-lepesre</a>
+            <a href="https://www.agroinform.hu/allattenyesztes/keltetni-marpedig-mindenki-tud-es-ezt-be-is-bizonyitjuk-32464-001" >keltetni-marpedig-mindenki-tud</a>
+        </nav>
+    </div>
+
+    <h3 id="munka">Munka</h3>
+
+    <ul>
+        <li>Raspberry Pi 4/5
+            <ol>Python script's</ol>
+            <ol>Webserver?</ol>
+            <ol>adat feltoltese a db-be</ol>
+        </li>
+        <li>Android App
+            <ol>Kotlin + Jetpack Compose</ol>
+            <ol>Get data from database</ol>
+            <ol>Display data</ol>
+            <ol>Make some action with rpi(take pic ...)</ol>
+        </li>
+        <li>Database/Storage
+            <ol>Supabase</ol>
+        </li>
+        <li>Communication
+            <ol>MQTT?</ol>
+            <ol>API(flask/aspnet/expressJS)(http)?</ol>
+        </li>
+    </ul>
+
+    <h3 id="muszerek">Muszerek</h3>
+
+    <ul>
+        <li>melegito</li>
+        <li>paratartalom fenntartasa</li>
+        <li>Homerseklet mero</li>
+        <li>Paratartalo mero</li>
+        <li>Kamera</li>
+        <li>szellozo(cooler)</li>
+        <li>vilagitas</li>
+        <li>tojasforgatas?</li>
+    </ul>
+
+    <h3 id="fontos">Fontos tudnivalok</h3>
+
+    <ul>
+        <li>Legyen szabályozható a páratartalom!</li>
+        <li>Legyen szabályozható a hőmérséklet!</li>
+        <li>21 nap a kelesi ideje</li>
+    </ul>
+
+    <h3 id="hardware">Hardware</h3>
+    
+    <div class="d-flex justify-content-center align-items-center flex-row gap-2 w-75 h-75">
+        <ul>
+            <li>
+                <a href="https://www.ebay.co.uk/itm/364934556346?_trkparms=amclksrc%3DITM%26aid%3D1110013%26algo%3DHOMESPLICE.SIMRXI%26ao%3D1%26asc%3D265340%26meid%3D7864b99ae4b545aa9cce46954673e9c1%26pid%3D101430%26rk%3D2%26rkt%3D12%26sd%3D145750101499%26itm%3D364934556346%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DSimplAMLv5PairwiseWebNoToraCoCoViewsNoHighIdfOrRoundRobinBlenderWithPromotedViewItems%26brand%3DUnbranded&_trksid=p2332490.c101430.m2460&itmprp=cksum%3A3649345563467864b99ae4b545aa9cce46954673e9c1%7Cenc%3AAQAJAAABMFh%252BnYASubGqPaCYif49hkjz%252Fo23isJrg2V%252BkQbI9LMN2lFZ4WIpI7xPGZ6HRcCo6ub8wz1MQme6Hh0BQRIvIfQN0CBxjyJPks%252FGAeYPWHOtA4OPBXQed3FYB%252B3TvGwDWYGW%252Fxp0ocNH3GOlRpkpmHcbDRqn5XcWEWUY0G5CsN8FbbokzwNQaav7wgYQFp5J%252BQWWcrRT1HiaBYIigpjBHlg81GaCol30wf%252FSLTN09WqFairwRUXcwhUXkOKl%252BJrAW7fnyx8MG0HDiKFsDVuD8Y9dm2n%252FO5vnTX7VL5PHHGVa8shYcoJ17iMTOwVYahdoufH7XRwXOOh2Vx6xHyOYCyHfHwWgknf7aPZ%252F4KiBKHniZXOv0wTSClAG%252Bg6vfLFfUzq4ATKk7bM%252BO3QdTJu4IQw%253D%7Campid%3APL_CLK%7Cclp%3A2332490&itmmeta=01J19W5RQ4NV1BGCTYF0VTTKGP">humidifier</a>
+            </li>
+        </ul>
+    </div>
+
+    <h3 id="kepek">Kepek</h3>
+
+    <div class="d-flex justify-content-center align-items-center flex-row gap-2 flex-wrap w-75 h-75" id="imgs">
+        <img src="images/csirke-keltetes-tablazat.png" alt="csirke-keltetes-tablazat" />
+        <img src="images/tojasforgatas.png" alt="tojasforgatas" />
+    </div>
+
+    <h3 id="tech">Tech</h3>
+
+    <footer id="footer" class="d-flex flex-column gap-1">
+        <a class="btn btn-primary" href="https://newbiely.com/tutorials/raspberry-pi/raspberry-pi-heating-system" target="_blank">raspberry-pi-heating-system</a>
+        <a class="btn btn-primary" href="https://www.pitunnel.com/">Pi tunnel</a>
+        <a class="btn btn-primary" href="https://towardsdev.com/android-kotlin-jetpack-compose-handle-push-notifications-pass-data-navigate-to-a-specific-838e11c9ca9c">Push notification in App</a>
+        <a class="btn btn-primary" href="https://www.quora.com/How-can-one-communicate-with-Raspberry-Pi-with-a-mobile-app-from-a-long-distance">communication</a>
+        <a class="btn btn-primary" href="https://medium.com/@bannuranurag/controlling-raspberry-pi-using-an-android-application-c7334625e513">control rpi with app</a>
+    </footer>
+    
+</body>
+</html>
